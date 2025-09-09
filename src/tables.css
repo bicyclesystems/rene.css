@@ -3,8 +3,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin-bottom: calc(var(--size-base) * 4);
-    margin-top: calc(var(--size-base) * 4);
+    margin-bottom: calc(var(--base-size) * 4);
+    margin-top: calc(var(--base-size) * 4);
 }
 
 thead {
@@ -13,13 +13,13 @@ thead {
 
 th {
     text-align: left;
-    padding: calc(var(--size-base) * 2.5);
+    padding: calc(var(--base-size) * 2.5);
     color: var(--color-secondary-foreground);
     font-weight: normal;
 }
 
 td {
-    padding: calc(var(--size-base) * 2.5);
+    padding: calc(var(--base-size) * 2.5);
     vertical-align: top;
 }
 
