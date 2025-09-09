@@ -1,5 +1,5 @@
 :root {
-    --size-base: 4px;
+    --base-size: 4px;
     --font-primary: "HelveticaNeue-light", "Helvetica Neue Light",
         "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
     --base-font-size: 1.25rem;

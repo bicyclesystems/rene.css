@@ -124,6 +124,13 @@
 .scale-125 { transform: scale(1.25); }
 .scale-150 { transform: scale(1.5); }
 
+/* Filter utilities */
+.blur-xs { filter: blur(var(--base-size)); }
+.blur-s { filter: blur(calc(var(--base-size) * 2)); }
+.blur-m { filter: blur(calc(var(--base-size) * 3)); }
+.blur-l { filter: blur(calc(var(--base-size) * 6)); }
+.blur-xl { filter: blur(calc(var(--base-size) * 10)); }
+
 .translate-x-50 { transform: translateX(50%); }
 .translate-x-100 { transform: translateX(100%); }
 .translate-y-50 { transform: translateY(50%); }

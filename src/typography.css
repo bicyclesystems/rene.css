@@ -96,23 +96,23 @@ li {
 }
 
 .text-xs {
-    font-size: calc(var(--size-base) * 2);
-    line-height: calc(var(--size-base) * 2);
+    font-size: calc(var(--base-size) * 2);
+    line-height: calc(var(--base-size) * 2);
 }
 
 .text-s {
-    font-size: calc(var(--size-base) * 3);
-    line-height: calc(var(--size-base) * 3);
+    font-size: calc(var(--base-size) * 3);
+    line-height: calc(var(--base-size) * 3);
 }
 
 .text-m {
-    font-size: calc(var(--size-base) * 3.5);
-    line-height: calc(var(--size-base) * 3.5);
+    font-size: calc(var(--base-size) * 3.5);
+    line-height: calc(var(--base-size) * 3.5);
 }
 
 .text-l {
-    font-size: calc(var(--size-base) * 4.5);
-    line-height: calc(var(--size-base) * 4.5);
+    font-size: calc(var(--base-size) * 4.5);
+    line-height: calc(var(--base-size) * 4.5);
 }
 
 @media (max-width: 48rem) {
