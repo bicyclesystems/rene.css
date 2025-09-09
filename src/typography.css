@@ -25,39 +25,30 @@ h6:first-child {
 
 h1 {
     font-size: calc(var(--base-font-size) * 3);
-    line-height: 0.95;
 }
 
 h2 {
     font-size: calc(var(--base-font-size) * 2.5);
-    line-height: 1.04;
 }
 
 h3 {
     font-size: calc(var(--base-font-size) * 2);
-    line-height: 1.08;
 }
 
 h4 {
     font-size: calc(var(--base-font-size) * 1.5);
-    line-height: 1.12;
 }
 
 h5 {
     font-size: calc(var(--base-font-size) * 1);
-    line-height: 1.16;
-    letter-spacing: 0.01rem;
 }
 
 h6 {
     font-size: calc(var(--base-font-size) * 0.75);
-    line-height: 1.12;
-    letter-spacing: 0.01rem;
 }
 
 p {
     margin: 0.5rem 0;
-    line-height: 1.35;
 }
 
 b,
@@ -88,7 +79,6 @@ a:hover span {
 
 li {
     padding: 0.125rem 0;
-    line-height: 1.6;
 }
 
 .text-center {
