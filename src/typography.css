@@ -1,6 +1,7 @@
 html {
     font-family: var(--font-primary);
     font-size: var(--base-font-size);
+    font-weight: 200;
 }
 
 h1,
@@ -24,31 +25,32 @@ h6:first-child {
 }
 
 h1 {
-    font-size: calc(var(--base-font-size) * 3);
+    font-size: calc(var(--base-font-size) * 4);
 }
 
 h2 {
-    font-size: calc(var(--base-font-size) * 2.5);
+    font-size: calc(var(--base-font-size) * 3.5);
 }
 
 h3 {
-    font-size: calc(var(--base-font-size) * 2);
+    font-size: calc(var(--base-font-size) * 3);
 }
 
 h4 {
-    font-size: calc(var(--base-font-size) * 1.5);
+    font-size: calc(var(--base-font-size) * 2.5);
 }
 
 h5 {
-    font-size: calc(var(--base-font-size) * 1);
+    font-size: calc(var(--base-font-size) * 1.5);
 }
 
 h6 {
-    font-size: calc(var(--base-font-size) * 0.75);
+    font-size: calc(var(--base-font-size) * 1);
 }
 
 p {
     margin: 0.5rem 0;
+    font-size: calc(var(--base-font-size) * 1.5);
 }
 
 b,
@@ -63,7 +65,7 @@ blockquote {
 
 code {
     display: block;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-family: "Source Code Pro", monospace;
     line-height: 1.25;
     overflow: auto;

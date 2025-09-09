@@ -1,8 +1,8 @@
 :root {
     --base-size: 4px;
-    --font-primary: "Under-light", "HelveticaNeue-light", "Helvetica Neue Light",
+    --font-primary: "under", "HelveticaNeue-light", "Helvetica Neue Light",
         "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
-    --base-font-size: 1.25rem;
+    --base-font-size: 1rem;
 }
 
 html,
