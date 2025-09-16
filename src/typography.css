@@ -55,7 +55,7 @@ p {
 
 b,
 strong {
-    font-weight: 600;
+    font-weight: 300;
 }
 
 blockquote {
@@ -81,6 +81,7 @@ a:hover span {
 
 li {
     padding: 0.125rem 0;
+    font-size: calc(var(--base-font-size) * 1.5);
 }
 
 .text-center {
