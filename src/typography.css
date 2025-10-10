@@ -1,6 +1,6 @@
 html {
     font-family: var(--font-primary);
-    font-size: var(--base-font-size);
+    font-size: calc(var(--base-font-size) * 1.25);
     font-weight: 200;
 }
 
@@ -25,19 +25,19 @@ h6:first-child {
 }
 
 h1 {
-    font-size: calc(var(--base-font-size) * 4);
-}
-
-h2 {
     font-size: calc(var(--base-font-size) * 3.5);
 }
 
+h2 {
+    font-size: calc(var(--base-font-size) * 2.75);
+}
+
 h3 {
-    font-size: calc(var(--base-font-size) * 3);
+    font-size: calc(var(--base-font-size) * 2.25);
 }
 
 h4 {
-    font-size: calc(var(--base-font-size) * 2.5);
+    font-size: calc(var(--base-font-size) * 2);
 }
 
 h5 {
@@ -45,12 +45,11 @@ h5 {
 }
 
 h6 {
-    font-size: calc(var(--base-font-size) * 1);
+    font-size: calc(var(--base-font-size) * 1.25);
 }
 
 p {
     margin: 0.5rem 0;
-    font-size: calc(var(--base-font-size) * 1.5);
 }
 
 b,
@@ -77,11 +76,6 @@ a {
 
 a:hover span {
     text-decoration: underline;
-}
-
-li {
-    padding: 0.125rem 0;
-    font-size: calc(var(--base-font-size) * 1.5);
 }
 
 .text-center {
