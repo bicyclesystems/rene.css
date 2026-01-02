@@ -1,35 +1,12 @@
 {
-  "name": "@rnbws/renecss",
-  "version": "0.1.5",
+  "name": "rene.css",
+  "private": true,
   "description": "Rene is a design system for intention and meaning",
-  "main": "rene.css",
   "scripts": {
-    "clean": "rm dist/bundle.js",
-    "rene": "webpack --mode development",
-    "rene.min": "npm version patch && webpack --mode production"
+    "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rnbwdev/rene.css.git"
-  },
-  "publishConfig": {
-    "publishConfig": {
-      "@rnbws:registry": "https://npm.pkg.github.com",
-      "access": "public"
-    }
-  },
-  "keywords": [
-    "css",
-    "design",
-    "framework",
-    "web"
-  ],
   "author": "Relate Design LTD",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rnbwdev/rene.css/issues"
-  },
-  "homepage": "https://github.com/rnbwdev/rene.css#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^3.4.1",

@@ -24,16 +24,6 @@ Matthew Howell for creating [reasonable.html](https://github.com/matthewhowell/r
 
 ## get started
 
-Install with NPM:
-
+```html
+<link rel="stylesheet" href="https://renecss.org/rene.css"/>
 ```
-npm install @rnbws/renecss
-```
-
-Unpkg CDN:
-
-```
-<link rel="stylesheet" href="https://unpkg.com/@rnbws/renecss/dist/rene.min.css"/>
-```
-
-That's it! 🎉

@@ -4,10 +4,12 @@ const WebpackShellPluginNext = require("webpack-shell-plugin-next");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const isProduction =
-  process.argv[process.argv.indexOf("--mode") + 1] === "production";
-const config = {
+module.exports = {
+  mode: "production",
   entry: ["./src/index.css"],
+  output: {
+    path: path.resolve(__dirname),
+  },
   module: {
     rules: [
       {
@@ -32,26 +34,20 @@ const config = {
     ],
   },
   optimization: {
-    minimizer: [
-      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
-      // `...`,
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [new CssMinimizerPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${isProduction ? "rene.min.css" : "rene.css"}`,
+      filename: "rene.css",
     }),
     new WebpackShellPluginNext({
       onBuildEnd: {
         scripts: [
           () => {
-            fs.unlinkSync(path.resolve(__dirname, "dist/main.js"));
+            fs.unlinkSync(path.resolve(__dirname, "main.js"));
           },
         ],
       },
     }),
   ],
 };
-
-module.exports = config;
