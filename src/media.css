@@ -13,6 +13,13 @@
 .icon-l  { width: calc(var(--base-size) * 12); height: calc(var(--base-size) * 12); }
 .icon-xl { width: calc(var(--base-size) * 16); height: calc(var(--base-size) * 16); }
 
+/* Square-size utilities (no display/background behavior) */
+.size-xs { width: calc(var(--base-size) * 3);  height: calc(var(--base-size) * 3); }
+.size-s  { width: calc(var(--base-size) * 6);  height: calc(var(--base-size) * 6); }
+.size-m  { width: calc(var(--base-size) * 8);  height: calc(var(--base-size) * 8); }
+.size-l  { width: calc(var(--base-size) * 12); height: calc(var(--base-size) * 12); }
+.size-xl { width: calc(var(--base-size) * 16); height: calc(var(--base-size) * 16); }
+
 /* Aspect ratio utilities */
 .aspect-square { aspect-ratio: 1 / 1; }
 .aspect-video  { aspect-ratio: 16 / 9; }

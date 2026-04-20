@@ -5,13 +5,13 @@
 
     /* Base unit for the type scale. `html` renders at 1.25× this (set in
        typography.css); heading rules multiply this value for their sizes. */
-    --base-font-size: 1rem;
+    --font-unit: 1rem;
 }
 
 html,
 [data-theme="light"] {
-    --color-primary: #0000cd;
-    --color-secondary: #800080;
+    --color-accent-primary: #0000cd;
+    --color-accent-secondary: #800080;
     --color-primary-background: #ffffff;
     --color-secondary-background: #eeeeee;
     --color-tertiary-background: #dddddd;
@@ -19,13 +19,13 @@ html,
     --color-secondary-foreground: #222222;
     --color-tertiary-foreground: #333333;
     --color-positive: #006400;
-    --color-critical: #d97706;
+    --color-warning: #d97706;
     --color-negative: #ff4500;
 }
 
 [data-theme="dark"] {
-    --color-primary: #0000cd;
-    --color-secondary: #800080;
+    --color-accent-primary: #0000cd;
+    --color-accent-secondary: #800080;
     --color-primary-background: #111111;
     --color-secondary-background: #222222;
     --color-tertiary-background: #333333;
@@ -33,6 +33,6 @@ html,
     --color-secondary-foreground: #eeeeee;
     --color-tertiary-foreground: #dddddd;
     --color-positive: #006400;
-    --color-critical: #d97706;
+    --color-warning: #d97706;
     --color-negative: #ff4500;
 }

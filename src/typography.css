@@ -2,7 +2,7 @@
 
 html {
     font-family: var(--font-primary);
-    font-size: calc(var(--base-font-size) * 1.25);
+    font-size: calc(var(--font-unit) * 1.25);
     font-weight: 200;
 }
 
@@ -16,12 +16,12 @@ h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0;
 }
 
-h1 { font-size: calc(var(--base-font-size) * 3.5); }
-h2 { font-size: calc(var(--base-font-size) * 2.75); }
-h3 { font-size: calc(var(--base-font-size) * 2.25); }
-h4 { font-size: calc(var(--base-font-size) * 2); }
-h5 { font-size: calc(var(--base-font-size) * 1.5); }
-h6 { font-size: calc(var(--base-font-size) * 1.25); }
+h1 { font-size: calc(var(--font-unit) * 3.5); }
+h2 { font-size: calc(var(--font-unit) * 2.75); }
+h3 { font-size: calc(var(--font-unit) * 2.25); }
+h4 { font-size: calc(var(--font-unit) * 2); }
+h5 { font-size: calc(var(--font-unit) * 1.5); }
+h6 { font-size: calc(var(--font-unit) * 1.25); }
 
 p {
     margin: 0.5em 0;
@@ -86,11 +86,11 @@ a:hover span {
 /* ---- Mobile heading scale ---- */
 
 @media (max-width: 768px) {
-    :root { --base-font-size: 1.125rem; }
-    h1 { font-size: calc(var(--base-font-size) * 2.5); }
-    h2 { font-size: calc(var(--base-font-size) * 2); }
-    h3 { font-size: calc(var(--base-font-size) * 1.5); }
-    h4 { font-size: calc(var(--base-font-size) * 1.25); }
-    h5 { font-size: calc(var(--base-font-size) * 1); }
-    h6 { font-size: calc(var(--base-font-size) * 0.75); }
+    :root { --font-unit: 1.125rem; }
+    h1 { font-size: calc(var(--font-unit) * 2.5); }
+    h2 { font-size: calc(var(--font-unit) * 2); }
+    h3 { font-size: calc(var(--font-unit) * 1.5); }
+    h4 { font-size: calc(var(--font-unit) * 1.25); }
+    h5 { font-size: calc(var(--font-unit) * 1); }
+    h6 { font-size: calc(var(--font-unit) * 0.75); }
 }
