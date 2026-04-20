@@ -15,9 +15,9 @@ html,
     --color-primary-foreground: #111111;
     --color-secondary-foreground: #222222;
     --color-tertiary-foreground: #333333;
-    --color-positive: darkgreen;
-    --color-critical: gold;
-    --color-negative: orangered;
+    --color-positive: #006400;
+    --color-critical: #ffd700;
+    --color-negative: #ff4500;
 }
 
 [data-theme="dark"] {
@@ -29,7 +29,7 @@ html,
     --color-primary-foreground: #ffffff;
     --color-secondary-foreground: #eeeeee;
     --color-tertiary-foreground: #dddddd;
-    --color-positive: darkgreen;
-    --color-critical: gold;
-    --color-negative: orangered;
+    --color-positive: #006400;
+    --color-critical: #ffd700;
+    --color-negative: #ff4500;
 }

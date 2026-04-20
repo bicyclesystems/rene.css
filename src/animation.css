@@ -1,7 +1,7 @@
-/* Animation utilities */
+/* Animation activator */
 .animate {
-    animation-duration: 16s;
-    animation-timing-function: linear;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
     animation-fill-mode: both;
 }
 
@@ -22,28 +22,15 @@
 .fade-out { animation-name: fadeOut; }
 .slide-up { animation-name: slideUp; }
 .slide-down { animation-name: slideDown; }
-.slide-left { animation-name: slideLeft; }
-.slide-right { animation-name: slideRight; }
-.rotate { animation-name: rotate; }
-.scale-up { animation-name: scaleUp; }
-.scale-down { animation-name: scaleDown; }
-.bounce { animation-name: bounce; }
+.spin { animation-name: spin; }
+.zoom-in { animation-name: zoomIn; }
+.zoom-out { animation-name: zoomOut; }
 .pulse { animation-name: pulse; }
 
-/* Animation iteration */
+/* Iteration */
 .infinite { animation-iteration-count: infinite; }
-.once { animation-iteration-count: 1; }
-.twice { animation-iteration-count: 2; }
 
-/* Animation direction */
-.reverse { animation-direction: reverse; }
-.alternate { animation-direction: alternate; }
-
-/* Animation state */
-.paused { animation-play-state: paused; }
-.running { animation-play-state: running; }
-
-/* Keyframe definitions */
+/* Keyframes */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -64,35 +51,19 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes slideLeft {
-    from { transform: translateX(20px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideRight {
-    from { transform: translateX(-20px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes rotate {
+@keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-@keyframes scaleUp {
+@keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
 
-@keyframes scaleDown {
+@keyframes zoomOut {
     from { transform: scale(1.2); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-30px); }
-    60% { transform: translateY(-15px); }
 }
 
 @keyframes pulse {
@@ -135,9 +106,3 @@
 .translate-x-100 { transform: translateX(100%); }
 .translate-y-50 { transform: translateY(50%); }
 .translate-y-100 { transform: translateY(100%); }
-
-/* Hover animations */
-.hover-grow:hover { transform: scale(1.05); }
-.hover-shrink:hover { transform: scale(0.95); }
-.hover-rotate:hover { transform: rotate(5deg); }
-.hover-up:hover { transform: translateY(-5px); }

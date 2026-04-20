@@ -17,27 +17,24 @@
 
 /*
   3. Allow percentage-based heights in the application
+  4. Improve text rendering
 */
 html,
 body {
   height: 100%;
 }
 
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
 body {
   -webkit-font-smoothing: antialiased;
 }
 
 /*
-  6. Improve media defaults
+  5. Improve media defaults
 */
 img,
 picture,
 video,
+audio,
 canvas,
 svg {
   display: block;
@@ -74,4 +71,15 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/*
+  10. Remove default margins from figures and UA borders from iframes
+*/
+figure {
+  margin: 0;
+}
+
+iframe {
+  border-style: none;
 }

@@ -62,10 +62,12 @@ blockquote {
 }
 
 code {
-    display: block;
-    font-size: 1rem;
     font-family: "Source Code Pro", monospace;
+    font-size: 1rem;
     line-height: 1.25;
+}
+
+pre {
     overflow: auto;
 }
 
@@ -79,6 +81,16 @@ a:hover span {
 
 .text-center {
     text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .text-xs {
@@ -101,7 +113,7 @@ a:hover span {
     line-height: calc(var(--base-size) * 4.5);
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
     :root {
         --base-font-size: 1.125rem;
     }
