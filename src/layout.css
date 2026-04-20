@@ -49,8 +49,6 @@ hr {
 }
 
 /* Box sizes */
-.box { flex: 1; }
-
 [class^="box-"] {
     display: flex;
 }
@@ -66,6 +64,14 @@ hr {
 .padding-m { padding: calc(var(--base-size) * 3); }
 .padding-l { padding: calc(var(--base-size) * 6); }
 .padding-xl { padding: calc(var(--base-size) * 10); }
+
+/* Margin utilities */
+.margin-xs { margin: var(--base-size); }
+.margin-s { margin: calc(var(--base-size) * 2); }
+.margin-m { margin: calc(var(--base-size) * 3); }
+.margin-l { margin: calc(var(--base-size) * 6); }
+.margin-xl { margin: calc(var(--base-size) * 10); }
+.margin-auto { margin: auto; }
 
 /* Gap utilities */
 [class^="gap-"] {
@@ -112,7 +118,7 @@ hr {
 .justify-start,
 .justify-center,
 .justify-end,
-.justify-stretch {
+.justify-between {
     display: flex;
 }
 
@@ -123,7 +129,7 @@ hr {
 .justify-start { justify-content: flex-start; }
 .justify-center { justify-content: center; }
 .justify-end { justify-content: flex-end; }
-.justify-stretch { justify-content: space-between; }
+.justify-between { justify-content: space-between; }
 
 /* Component styles */
 .sticky {
@@ -152,11 +158,12 @@ hr {
 
 .hidden { display: none; }
 
-.scrollable {
-    max-height: 100vh;
-    height: 100%;
-    overflow: auto;
-}
+/* Display utilities */
+.block        { display: block; }
+.inline       { display: inline; }
+.inline-block { display: inline-block; }
+.inline-flex  { display: inline-flex; }
+.grid         { display: grid; }
 
 /* Position utilities */
 .relative { position: relative; }
@@ -183,11 +190,20 @@ hr {
 .overflow-x-hidden { overflow-x: hidden; }
 .overflow-y-hidden { overflow-y: hidden; }
 
+/* Z-index scale */
+.z-1    { z-index: 1; }
+.z-10   { z-index: 10; }
+.z-100  { z-index: 100; }
+.z-1000 { z-index: 1000; }
+
 /* Interaction utilities */
-.cursor-pointer { cursor: pointer; }
-.no-select { user-select: none; }
-.no-events { pointer-events: none; }
-.no-outline { outline: none; }
+.cursor-pointer  { cursor: pointer; }
+.cursor-grab     { cursor: grab; }
+.cursor-grabbing { cursor: grabbing; }
+.cursor-default  { cursor: default; }
+.no-select       { user-select: none; }
+.no-events       { pointer-events: none; }
+.no-outline      { outline: none; }
 
 /* Mobile styles */
 @media (max-width: 768px) {

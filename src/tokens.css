@@ -2,6 +2,9 @@
     --base-size: 4px;
     --font-primary: "under", "HelveticaNeue-light", "Helvetica Neue Light",
         "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
+
+    /* Base unit for the type scale. `html` renders at 1.25× this (set in
+       typography.css); heading rules multiply this value for their sizes. */
     --base-font-size: 1rem;
 }
 
@@ -16,7 +19,7 @@ html,
     --color-secondary-foreground: #222222;
     --color-tertiary-foreground: #333333;
     --color-positive: #006400;
-    --color-critical: #ffd700;
+    --color-critical: #d97706;
     --color-negative: #ff4500;
 }
 
@@ -30,6 +33,6 @@ html,
     --color-secondary-foreground: #eeeeee;
     --color-tertiary-foreground: #dddddd;
     --color-positive: #006400;
-    --color-critical: #ffd700;
+    --color-critical: #d97706;
     --color-negative: #ff4500;
 }

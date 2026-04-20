@@ -12,3 +12,8 @@
 .icon-m  { width: calc(var(--base-size) * 8);  height: calc(var(--base-size) * 8); }
 .icon-l  { width: calc(var(--base-size) * 12); height: calc(var(--base-size) * 12); }
 .icon-xl { width: calc(var(--base-size) * 16); height: calc(var(--base-size) * 16); }
+
+/* Aspect ratio utilities */
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-video  { aspect-ratio: 16 / 9; }
+.aspect-photo  { aspect-ratio: 3 / 2; }

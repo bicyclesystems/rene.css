@@ -30,19 +30,29 @@
   color: var(--color-tertiary-background);
 }
 
-/* Solid Colors */
-.color-primary {
+/* Accent Colors */
+.accent-primary {
   background-color: var(--color-primary);
 }
 
-.color-secondary {
+.accent-secondary {
   background-color: var(--color-secondary);
 }
 
-/* Status Colors */
+/* Status Backgrounds */
 .background-negative { background-color: var(--color-negative); }
 .background-critical { background-color: var(--color-critical); }
 .background-positive { background-color: var(--color-positive); }
+
+/* Text Colors (foreground tiers) */
+.text-primary   { color: var(--color-primary-foreground); }
+.text-secondary { color: var(--color-secondary-foreground); }
+.text-tertiary  { color: var(--color-tertiary-foreground); }
+
+/* Status Text Colors */
+.text-negative { color: var(--color-negative); }
+.text-critical { color: var(--color-critical); }
+.text-positive { color: var(--color-positive); }
 
 /* Opacity Scale */
 .opacity-xs { opacity: 0.1; }
