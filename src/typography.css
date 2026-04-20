@@ -81,6 +81,16 @@ a:hover span {
     text-align: center;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .text-xs {
     font-size: calc(var(--base-size) * 2);
     line-height: calc(var(--base-size) * 2);
