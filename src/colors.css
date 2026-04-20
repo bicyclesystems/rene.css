@@ -2,7 +2,6 @@
 .background-primary {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
-  border-color: var(--color-primary-background);
 }
 
 .background-secondary {
@@ -19,7 +18,6 @@
 .foreground-primary {
   background-color: var(--color-primary-foreground);
   color: var(--color-primary-background);
-  border-color: var(--color-primary-foreground);
 }
 
 .foreground-secondary {
@@ -35,7 +33,6 @@
 /* Solid Colors */
 .color-primary {
   background-color: var(--color-primary);
-  border-color: var(--color-primary);
 }
 
 .color-secondary {
@@ -48,8 +45,8 @@
 .background-positive { background-color: var(--color-positive); }
 
 /* Opacity Scale */
-.opacity-xl { opacity: 0.1; }
-.opacity-l  { opacity: 0.25; }
+.opacity-xs { opacity: 0.1; }
+.opacity-s  { opacity: 0.25; }
 .opacity-m  { opacity: 0.5; }
-.opacity-s  { opacity: 0.75; }
-.opacity-xs { opacity: 0.9; }
+.opacity-l  { opacity: 0.75; }
+.opacity-xl { opacity: 0.9; }

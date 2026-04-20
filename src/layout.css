@@ -1,7 +1,7 @@
 /* Scrollbar styles */
 * {
-    scrollbar-width: 5px;
-    scrollbar-color: var(--color-primary-background) var(--color-tertiary-background);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-tertiary-background) var(--color-primary-background);
 }
 
 *::-webkit-scrollbar {
@@ -105,16 +105,18 @@ hr {
 .column { flex-direction: column; }
 
 /* Alignment utilities */
-[class*="align-"],
-[class*="justify-"] {
+.align-start,
+.align-center,
+.align-stretch,
+.align-end,
+.justify-start,
+.justify-center,
+.justify-end,
+.justify-stretch {
     display: flex;
 }
 
-.align-center {
-    align-items: center;
-    justify-content: center;
-}
-
+.align-center { align-items: center; }
 .align-start { align-items: flex-start; }
 .align-stretch { align-items: stretch; }
 .align-end { align-items: flex-end; }
@@ -127,7 +129,6 @@ hr {
 .sticky {
     position: sticky;
     top: 0;
-    z-index: 1;
 }
 
 .panel {

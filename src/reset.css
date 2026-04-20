@@ -72,3 +72,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+  10. Remove default margins from figures and UA borders from iframes
+*/
+figure {
+  margin: 0;
+}
+
+iframe {
+  border-style: none;
+}
